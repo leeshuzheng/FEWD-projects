@@ -4,6 +4,12 @@
 - Used Terminal for Git commands, and for creation of directories for HTML and CSS files
 - Created a static page for practicing HTML tags and CSS rules
 
+### Exercise  
+Inside the exercise folder are two folder, Start and End. Work with the Start folder and recreate the mockup below: 
+![Exercise Mockup](Exercise/screenshot.png?raw=true "Exercise Mockup")
+
+The End folder contains my solution, but attempt it first and try not to cheat! I have added comments into the End folder for you to figure out how the CSS works.
+
 ### Questions  
 *Q: Can I create a nested ordered list which maintains its numbering?*
 ```
