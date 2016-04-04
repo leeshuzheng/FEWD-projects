@@ -1,0 +1,57 @@
+/* This is also a comment for CSS files */
+/* The completed CSS document, do not cheat! */
+
+/* Styling the Main image and description */
+.container {
+  width: 80%;
+  /* Why did I set the 'auto' value on margin? */
+  margin: auto 10%;
+  font-family: sans-serif;
+}
+
+.container p {
+  line-height: 1.4;
+}
+
+.main-image, .description {
+  width: 50%;
+  /* What would happen if I remove the statement below? */
+  box-sizing: border-box;
+}
+
+.main-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.description {
+  float: right;
+  padding-left: 15px;
+}
+
+/* Styling the social navigation */
+.social {
+  list-style-type: none;
+  /* Why did I reset padding-left to zero? Investigate! */
+  padding-left: 0;
+}
+
+.social li {
+  /* Investigate the different values of the 'display' property */
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.social li img{
+  /* Investigate the difference between 'width' and 'max-width' ;) */
+  max-width: 35px;
+  height: auto;
+}
+
+.footer {
+  /* the 'clear' property ensures that the footer gets pushed to the bottom by clearing the floated elements */
+  clear: both;
+  /* Note: you can replace the '#ccc' with a name of a color */
+  /* e.g. border-top: 1px solid grey; */
+  border-top: 1px solid #ccc;
+}
