@@ -6,7 +6,7 @@
 
 ### Exercise  
 Inside the exercise folder are two folder, Start and End. Work with the Start folder and recreate the mockup below: 
-![Exercise Mockup](/exercise/screnshot.png?raw=true "Exercise Mockup")
+![Exercise Mockup](exercise/screnshot.png?raw=true "Exercise Mockup")
 
 The End folder contains my solution, but attempt it first and try not to cheat! I have added comments into the End folder for you to figure out how the CSS works.
 
