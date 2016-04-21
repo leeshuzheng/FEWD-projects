@@ -1,0 +1,207 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Open sans, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  /* to center it */
+  height: auto;
+}
+
+header {
+  background: rgb(1,33,76);
+  position: relative;
+  height: 120px;
+}
+
+nav {
+}
+
+main {
+ background: #f0efef;
+ position: relative;
+ height: auto;
+ height: 120%;
+}
+
+main img {
+  position: relative;
+  left: 70px;
+  width: 85%;
+}
+
+.article-container {
+  width: 700px;
+  padding-top: 20px;
+}
+
+article {
+}
+
+aside {
+  width: 240px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #033048;
+}
+
+aside img {
+  position: absolute;
+  right: 20px;
+}
+
+.adunit {
+  /* the ad image */
+  position: relative;
+  left: 0;
+}
+
+section {
+  background: #f9e42e;
+  height: 80px;
+}
+
+.button {
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  background: rgb(1,33,76);
+  color: white;
+  height: 40px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+footer {
+  background-color: #121212;
+  position: relative;
+  bottom: 30px;
+  height: auto;
+}
+
+footer ul {
+  text-align: center;
+  padding-right: 65px;
+}
+
+footer li {
+  display: inline-block;
+}
+
+/*********************
+ fonts
+  *********************/
+header h1 {
+  color: white;
+  position: absolute;
+  left: 70px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.h1-width {
+  width: 95%;
+}
+
+nav ul {
+  list-style-type: none;
+  color: #f9e42e;
+  font-weight: 300;
+  font-size: 24px;
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  /* change it to become an inline so it does not take up all the space it can */
+}
+
+article h1 {
+  color: #033048;
+  font-size: 35px;
+  font-weight: 600;
+  padding-left: 70px;
+}
+
+article p {
+  color: #606161;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 70px;
+}
+
+aside h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+aside ul {
+  font-size: 20px;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+aside p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+button {
+  width: 200px;
+  margin: auto;
+}
+
+footer h1 {
+  color: #f9e42e;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
