@@ -1,0 +1,324 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #f0efef;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 36px;
+  font-weight: 800;
+}
+header {
+  background: #033048;
+  padding: 15px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+}
+header nav {
+  float: right;
+  margin-top: 25px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 18px;
+}
+header nav ul li a {
+  color: #f9e42e;
+}
+
+#hero {
+  height: 600px;
+  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
+  background-size: cover;
+  padding-top: 32px;
+}
+
+#hero .logo {
+  color: #fff;
+}
+#hero h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 120px 0 60px;
+  /* top 120px, rightleft 0, bottom 60px */
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+#benefits {
+  padding: 20px 0 80px;
+}
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#benefits p, #benefits ul {
+  width: 800px;
+}
+#benefits ul {
+  list-style: square;
+  padding: 0;
+  list-style-position: inside;
+  margin: 20px 0 0 20px;
+}
+
+#benefits ul li {
+  margin-bottom: 5px;
+}
+
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: 70px 0 70px;
+  color: #fff;
+}
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 60.41%;
+  margin: 0 auto;
+}
+blockquote span {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+#posts {
+  width: 64.583%;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+}
+
+.post {
+  border-bottom: 1px solid #043049;
+  margin-bottom: 20px;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #606161;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 65px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: 30px;
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+#sidebar {
+  width: 31.25%;
+  padding: 20px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+#sidebar h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px 0 15px 0;
+  color: #043049;
+}
+#sidebar ul {
+  padding: 0;
+  margin-bottom: 40px;
+}
+#sidebar ul li {
+  list-style-type:disc;
+  list-style-position: inside;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: 16px;
+}
+#sidebar p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+#bottom-cta {
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: 40px 0;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-top: 0;
+}
+footer ul {
+  padding: 0;
+  margin-bottom: 40px;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+}
+footer ul li + li {
+  margin-left: 30px;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* media queries for ipad */
+@media only screen and (max-width: 768px) {
+  /* for blog.html */
+  .hide {
+    display: none;
+  }
+  #posts {
+    width: 100%;
+    padding-left: 5%;
+  }
+  #sidebar {
+    width: 100%;
+    padding-left: 5%;
+  }
+  .shiftright {
+    padding-left: 5%;
+    margin: auto;
+  }
+  /* for index.html */
+  #hero {
+    height: 250px;
+  }
+  #hero h2 {
+    font-size: 30px;
+  }
+  .container-up {
+    position: relative;
+    bottom: 100px;
+  }
+  .container-adjust {
+    padding-left: 5%;
+  }
+  #benefits p {
+    width: 80%;
+  }
+  blockquote {
+    font-size: 24px;
+  }
+}
