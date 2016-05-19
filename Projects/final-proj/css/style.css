@@ -1,0 +1,203 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1080px;
+  height: 100%;
+}
+
+/*STYLES GO DOWN HERE*/
+
+header {
+  background-color: rgb(125, 20, 27);
+  height: 70px;
+}
+
+/*muji logo*/
+
+#sitename {
+  background-image: url('../images/muji-logo.jpg');
+  background-size: 100%;
+  text-indent: -9999px;
+  height: 60px;
+  width: 120px;
+  position: relative;
+  top: 12%;
+  left: 5%;
+}
+
+/*navigation on the right*/
+
+#right-nav {
+  position: relative;
+  bottom: 35%;
+}
+
+#right-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#right-nav li {
+  display: inline;
+  padding: 15px 5px;
+  position: relative;
+  left: 750px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#right-nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*store categories bar*/
+
+#store-cat {
+  background-color: #E6E6E6;
+}
+
+#store-cat ul {
+  list-style-type: none;
+
+}
+
+#store-cat li {
+  display: inline;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/*carousel*/
+
+#carousel-wrapper {
+  height: 400px;
+  background: url('../images/free-delivery.png') no-repeat center;
+}
+
+#carousel {
+
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  background: #fff;
+}
+
+/* products container*/
+#products-wrapper {
+  height: 400px;
+  background-color: white;
+}
+
+#products {
+
+}
+
+#first-row li {
+  list-style: none;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: relative;
+  left: 15%;
+}
+
+#second-row li {
+  list-style: none;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 15px;
+  position: relative;
+  left: 15%;
+
+}
+
+#products h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding-left: 5%;
+}
+
+/*map container*/
+
+#map-wrapper {
+  height: 300px;
+  background-color: tomato;
+}
+
+/*footer*/
+
+footer {
+  height: 100px;
+  background-color: #F5F2E9;
+}
+
+footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  top: 10%;
+}
