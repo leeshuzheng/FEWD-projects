@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+  <!-- javascript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+
+  <!-- google maps API -->
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <!-- initialise the map -->
+  <!-- I define the properties of the map here -->
+  <script>
+  function initialize () {
+    var mapProp = {
+      center:new google.maps.LatLng(50, 50),
+      zoom: 7,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    // target div with map-wrapper id to place map there
+    var map = new google.maps.Map(document.getElementById("map-wrapper"), mapProp);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+
+<body>
+<div id="fullpage">
+<!-- put a fixed <nav> here -->
+  <div class="section" id="campaignContainer">
+    <img src="images/mujiyou.png" alt="" />
+  </div>
+
+<div class="section fp-auto-height" id="information">
+<img src="images/feelathome.png" alt="" />
+<i class="fa fa-shopping-basket" aria-hidden="true" id="shoppingCart"></i>
+</div>
+
+  <div class="section">
+    <!-- leave fixed text as a message to inspire visitors -->
+    <div id="rightAtHome"
+    data-vide-bg="video/rightathome" data-vide-options="loop: true, muted: true, position: 0% 0%">
+    </div>
+  </div>
+
+  <div class="section">
+    <!-- products? -->
+    <div id="map-wrapper">
+      <!-- google maps goes here -->
+    </div>
+  </div>
+
+  <div class="section fp-auto-height" id="footer">
+    <!-- footer goes here -->
+  </div>
+
+
+</div>
+</body>
+<script src="js/jquery.vide.js"></script>
+</html>

@@ -54,150 +54,88 @@ body {
   height: 100%;
 }
 
-/*STYLES GO DOWN HERE*/
+/* styles for front.html */
 
-header {
-  background-color: rgb(125, 20, 27);
-  height: 70px;
+/*frontpage div*/
+#myBlock {
+  /*position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: left;
 }
 
-/*muji logo*/
-
-#sitename {
-  background-image: url('../images/muji-logo.jpg');
-  background-size: 100%;
-  text-indent: -9999px;
-  height: 60px;
-  width: 120px;
+#myBlock a {
   position: relative;
-  top: 12%;
-  left: 5%;
+  left: 40%;
+  top: 40%;
 }
 
-/*navigation on the right*/
+#myBlock img {
+  height: 200px;
+  max-width: 100%;
+  text-align: center;
+}
 
-#right-nav {
+/*main.html STYLES GO DOWN HERE*/
+
+.section {
+  text-align: center;
+  font-size: 3em;
+}
+
+/*NAVIGATION STYLE*/
+/*.fixedNav {
+  position: fixed;
+  background-color: red;
+  width: 100vw;
+  height: 30px;
+}*/
+
+#campaignContainer {
+  background-image: url('../images/campaign_new.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+#campaignContainer img {
+  height: 150px;
+  max-width: 100%;
+  text-align: center;
   position: relative;
-  bottom: 35%;
+  top: 20%;
 }
 
-#right-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#information {
+  width: 100vw;
+  height: 500px;
+  background-color: rgb(167, 207, 216);
 }
 
-#right-nav li {
-  display: inline;
-  padding: 15px 5px;
+#information img {
+  height: 100px;
   position: relative;
-  left: 750px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  top: 7%;
 }
 
-#right-nav a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-/*store categories bar*/
-
-#store-cat {
-  background-color: #E6E6E6;
-}
-
-#store-cat ul {
-  list-style-type: none;
-
-}
-
-#store-cat li {
-  display: inline;
-  padding: 10px 15px;
-  font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-
-/*carousel*/
-
-#carousel-wrapper {
-  height: 400px;
-  background: url('../images/free-delivery.png') no-repeat center;
-}
-
-#carousel {
-
-}
-
-hr {
-  width: 80%;
-  height: 1px;
-  background: #fff;
-}
-
-/* products container*/
-#products-wrapper {
-  height: 400px;
+#shoppingCart {
   background-color: white;
 }
 
-#products {
-
+#rightAtHome {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: left;
 }
 
-#first-row li {
-  list-style: none;
-  display: inline;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 10px 15px;
-  position: relative;
-  left: 15%;
-}
-
-#second-row li {
-  list-style: none;
-  display: inline;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 10px 15px;
-  position: relative;
-  left: 15%;
-
-}
-
-#products h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  padding-left: 5%;
-}
-
-/*map container*/
-
-#map-wrapper {
+#footer {
   height: 300px;
-  background-color: tomato;
-}
-
-/*footer*/
-
-footer {
-  height: 100px;
-  background-color: #F5F2E9;
-}
-
-footer p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  text-align: center;
-  color: #000000;
-  position: relative;
-  top: 10%;
+  background-color: black;
 }

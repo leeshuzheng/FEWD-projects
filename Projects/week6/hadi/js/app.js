@@ -15,7 +15,7 @@ var $button = $('#submit-btn');
 
 $button.click(function () {
   // .val will obtain the string entered by the user
-  // .val to be located within the function so the string is updated each time
+  // .val to be located within the function so the string is updated each time, previously was located outside the function
   var $city = $('#city-type').val();
   // for sydney
   if ($city == "Sydney" || $city == "SYD") {
