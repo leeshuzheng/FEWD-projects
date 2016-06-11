@@ -1,0 +1,64 @@
+p {
+  font-family: 'Helvetica Neue';
+  font-size: 40px;
+}
+
+.form {
+  width: 500px;
+}
+
+label {
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 200px;
+  position: absolute;
+  left: 120px;
+}
+
+select {
+  position: absolute;
+  left: 120px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  font-size: 14px;
+}
+
+select {
+  border: none;
+  background: #FFFFFF;
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+
+button {
+  width: 170px;
+  height: 35px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.shrinkText {
+  width: 100px;
+}
+
+.radios {
+  position: absolute;
+  left: 120px;
+}
+
+.servicesWrapper {
+  display: inline;
+}
