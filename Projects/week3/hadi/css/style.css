@@ -45,7 +45,7 @@ body {
 }
 
 header {
-  background: rgb(1,33,76);
+  background: #033048;
   position: relative;
   height: 120px;
 }
@@ -60,6 +60,7 @@ main {
  height: 120%;
 }
 
+
 main img {
   position: relative;
   left: 70px;
@@ -69,16 +70,18 @@ main img {
 .article-container {
   width: 700px;
   padding-top: 20px;
+  display: inline-block;
 }
 
-article {
+#sideBar {
+  width: 200px;
+  display: inline-block;
+  position: absolute;
+  bottom: 320px;
 }
 
 aside {
   width: 240px;
-  position: absolute;
-  right: 20px;
-  top: 15px;
   color: #033048;
 }
 
@@ -130,15 +133,13 @@ footer li {
 /*********************
  fonts
   *********************/
+
 header h1 {
   color: white;
   position: absolute;
   left: 70px;
   font-weight: 600;
   font-size: 40px;
-}
-
-.h1-width {
   width: 95%;
 }
 
@@ -146,7 +147,7 @@ nav ul {
   list-style-type: none;
   color: #f9e42e;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   position: absolute;
   right: 100px;
   top: 20px;
@@ -155,7 +156,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  /* change it to become an inline so it does not take up all the space it can */
+  padding-right: 10px;
 }
 
 article h1 {
@@ -177,15 +178,37 @@ aside h1 {
   font-weight: 800;
 }
 
+a {
+  color: #f9e42e;
+}
+
+a:hover {
+  background-color: grey;
+}
+
 aside ul {
   font-size: 20px;
   font-weight: 300;
   list-style-type: none;
+  padding: 0 40px 0 0;
 }
 
 aside p {
   font-size: 20px;
   font-weight: 300;
+}
+
+span {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+hr {
+  height: 1px;
+  background-color: #033048;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 button {
