@@ -98,9 +98,11 @@ body {
 
 #campaignContainer {
   background-image: url('../images/campaign_new.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
+  max-width: 100%;
+  /*background-attachment: fixed;*/
   background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-position: center;
   height: 700px;
 }
 
@@ -109,23 +111,35 @@ body {
   max-width: 100%;
   text-align: center;
   position: relative;
-  top: 20%;
+  /*top: 10%;*/
+  bottom: 20%;
 }
 
-#information {
-  width: 100vw;
-  height: 500px;
-  background-color: rgb(167, 207, 216);
+#feelAtHome {
+  font-size: 70px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #FFFFFF;
+  text-align: center;
+  /*position: relative;*/
+  /*bottom: 40px;*/
+  /*top: 40px;*/
+  margin: 50px 0 50px 0;
 }
 
-#information img {
-  height: 100px;
+#mainText {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 100;
+  width: 35%;
   position: relative;
-  top: 7%;
-}
-
-#shoppingCart {
-  background-color: white;
+  /*top: 40px;*/
+  left: 16%;
+  text-align: left;
+  /*padding: 0 20px 0 0;*/
+  line-height: 30px;
+  margin: 0 50px 70px 0;
 }
 
 #rightAtHome {
@@ -135,7 +149,117 @@ body {
   text-align: left;
 }
 
+#downloadText {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #000000;
+  font-size: 55px;
+  margin: 45px 0 25px; 0;
+}
+
+#mainText2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #000000;
+  font-size: 17px;
+  width: 60%;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 0 0 30px;
+}
+
+#inlineText {
+  display: inline-block;
+  width: 45%;
+}
+
+#iphone {
+  height: 550px;
+  max-width: 100%;
+  display: inline-block;
+  /*margin: 0 0 30px 0;*/
+  position: relative;
+  bottom: 50px;
+}
+
+/*#location {
+  width: 35%;
+  height: 300px;
+  display: inline-block;
+  background-color: rgb(127, 0, 25);
+}*/
+#mapContainer {
+  background-color: rgb(127, 0, 25);
+}
+
+#visitUs {
+  float: left;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 50px 0 0 40px;
+  background-color: rgb(127, 0, 25);
+}
+
+#vivocity {
+  float: left;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin: 110px 0 15px 10px;
+  width: 150px;
+  background-color: rgb(127, 0, 25);
+}
+
+#map-wrapper {
+  height: 300px;
+  width: 63%;
+  /*background-color: rgb(127, 0, 25);*/
+  /*display: inline-block;*/
+  float: right;
+}
+
 #footer {
   height: 300px;
   background-color: black;
+}
+
+#footer p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#footer img {
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #map-wrapper {
+    width: 100%;
+  }
+  #campaignContainer img {
+    height: 10%;
+  }
+  #feelAtHome {
+    font-size: 40px;
+  }
+  #mainText {
+    width: 60%;
+    text-align: center;
+  }
+  #downloadText {
+    font-size: 40px;
+  }
+  #mainText2 {
+    display: none;
+  }
+  .gone {
+    display: none;
+  }
 }

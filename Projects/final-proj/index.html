@@ -1,111 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MUJI storefront</title>
-    <!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" charset="utf-8"></script>
-		<script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-<!-- google maps API -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<!-- initialise the map -->
-<!-- I define the properties of the map here -->
-<script>
-  function initialize () {
-    var mapProp = {
-      center:new google.maps.LatLng(50, 50),
-      zoom: 7,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <title>MUJI</title>
+</head>
 
-    // target div with map-wrapper id to place map there
-      var map = new google.maps.Map(document.getElementById("map-wrapper"), mapProp);
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
-  </head>
-    
-  <body>
-    <div class="container">
-
-    <header>
-
-      <div id="sitename">
-      <a href="index.html"></a>
-      </div>
-
-      <div class="clear">
-
-      </div>
-
-      <div id="right-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Newsletter</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <div id="store-cat">
-      <ul>
-        <button id="fabricsHolder">Fabrics
-          <ul id="fabricsContent">
-
-          </ul>
-        </li>
-        <li>Furniture</li>
-        <li>Home and bath</li>
-        <li>Stationery</li>
-        <li>Electronics</li>
-        <li>Mens Wear</li>
-        <li>Ladies Wear</li>
-        <li>Accessories</li>
-      </ul>
-    </div>
-
-    <div id="carousel-wrapper">
-      <section id="carousel">
-
-      </section>
-    </div>
-
-<hr />
-
-<div id="products-wrapper">
-<section id="products">
-  <h2>Products of the week</h2>
-<ul id="first-row">
-  <li>High back reclining sofa</li>
-  <li>Oak dresser</li>
-  <li>Oak chest</li>
-  <li>PP Case drawer</li>
-</ul>
-
-<ul id="second-row">
-  <li>Storage bed double oak</li>
-  <li>Aroma diffuser</li>
-  <li>Men's stand collar linen shirt</li>
-  <li>Women's jeans</li>
-</ul>
-</section>
+<div id="myBlock"
+data-vide-bg="video/mujivideo" data-vide-options="loop: true, muted: true, position: 0% 0%">
+<a href="main.html"><img src="images/mujilogo.png" alt="" /></a>
 </div>
 
-<div id="map-wrapper">
-<!-- the map will appear here -->
-</div>
-<footer>
-  <p>
-    MUJI
-  </p>
-</footer>
-</div>
-  </body>
 
-
+<script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+<script src="js/jquery.vide.js"></script>
 </html>
